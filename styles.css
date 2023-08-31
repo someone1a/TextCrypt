@@ -10,13 +10,24 @@ body {
     font-family: var(--font);
 }
 
-.form {
+article{
     margin: auto;
     width: 16%;
+}
+
+.form {
     border: solid black 2px;
 }
 
 textarea {
     max-width: 190px;
     max-height: 250px;
+}
+.button{
+    text-align: center;
+    background-color:yellow;
+}
+
+.button:hover{
+    background-color: aquamarine;
 }

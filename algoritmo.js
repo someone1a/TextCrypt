@@ -1,4 +1,6 @@
-const encriptar = (text) => {
+const encriptar = ()=> {
+    let texto = document.getElementById("text").value
+    let text = texto.toString()
     const MN = "@#&!¡¿";
     const AE = "123456789";
     const parentesis = "ABCDEFGHIJKLMNSOPQRTUVWXYZ";
@@ -31,15 +33,5 @@ const encriptar = (text) => {
         textoEncriptado += encriptado.charAt(Math.floor(Math.random() * encriptado.length));
     }
 
-    return textoEncriptado;
+    return document.getElementById("result").innerHTML=`<span>El texto encriptado es:</span> ${textoEncriptado}`
 }
-
-const textoOriginal = `-¿Por qué, caramba? -preguntó Jerrod-. No teníamos nada allí. En X-23 
-tendremos todo. No estarás sola. No serás una pionera. Ya hay un 
-millón de personas en ese planeta. Por Dios, nuestros bisnietos tendrán 
-que buscar nuevos mundos porque llegará el día en que X-23 estará 
-superpoblado-. Luego agregó, después de una pausa reflexiva: -Te 
-aseguro que es una suerte que las computadoras hayan desarrollado 
-los viajes interestelares, considerando el ritmo al que aumenta la raza.`;
-
-console.log(encriptar(textoOriginal));
